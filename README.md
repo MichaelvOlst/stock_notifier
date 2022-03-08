@@ -49,16 +49,16 @@ java -jar target/stock_notifier.jar
 
 First you have to build it
 ```
-docker build -t scraper .
+docker build -t stock_notifier .
 ```
 
 Then you can use any of these two commands below
 
 #### Run docker in interactive mode
 ```
-docker run --rm -it scraper:latest
+docker run --rm -it stock_notifier:latest
 ```
 #### Run docker in the background
 ```
-docker run --rm -it -v  -d scraper:latest
+docker run --rm -it -v  -d stock_notifier:latest
 ```

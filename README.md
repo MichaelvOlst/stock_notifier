@@ -1,4 +1,4 @@
-# Marktplaats scraper
+# Stock Notifier
 
 I created this in Java and Maven so I can learn how to program in this language. 
 If you think something is missing or the code can be better, Let me know or create a pull request.

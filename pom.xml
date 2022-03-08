@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>nl.michaelvanolst.app</groupId>
-  <artifactId>marktplaats_scraper</artifactId>
+  <artifactId>stock_notifier</artifactId>
   <version>0.0.1</version>
 
-  <name>marktplaats_scraper</name>
+  <name>stock_notifier</name>
   <url>https://www.michaelvanolst.nl</url>
 
   <properties>
@@ -70,7 +70,7 @@
   </dependencies>
 
   <build>
-    <finalName>marktplaats_scraper</finalName>
+    <finalName>stock_notifier</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins> 
          <plugin>

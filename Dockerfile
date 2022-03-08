@@ -2,7 +2,6 @@ FROM maven AS build
 
 COPY src /app/src
 COPY pom.xml /app
-# RUN  mvn -f /app/pom.xml exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps"
 RUN  mvn -f /app/pom.xml clean compile assembly:single
 
 FROM openjdk:11
@@ -36,6 +35,6 @@ RUN apt-get update \
 COPY tasks /tasks
 COPY templates /templates
 COPY config.properties /config.properties
-COPY --from=build /app/target/marktplaats_scraper.jar marktplaats_scraper.jar
-ENTRYPOINT ["java", "-jar","marktplaats_scraper.jar"]
+COPY --from=build /app/target/stock_notifier.jar stock_notifier.jar
+ENTRYPOINT ["java", "-jar","stock_notifier.jar"]
 

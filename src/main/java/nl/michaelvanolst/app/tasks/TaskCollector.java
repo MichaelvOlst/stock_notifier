@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import nl.michaelvanolst.app.dto.TaskDto;
+import nl.michaelvanolst.app.dtos.TaskDto;
 
 public class TaskCollector {
 

@@ -1,6 +1,4 @@
-package nl.michaelvanolst.app.dto;
-
-import java.util.Map;
+package nl.michaelvanolst.app.dtos;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -19,17 +17,14 @@ public class TaskDto {
   
   private String title;
   private String url;
+  private String selector;
+  private String contains;
   private int interval;
-  private String filter;
-  private String itemHolder;
-  private String itemHref;
   private EmailDto email;
-
-  private Map<String, String> selectors;
 
   @Override
   public String toString() {
-    return this.url + " " + this.interval + " " + this.filter + " " + this.selectors.toString();
+    return this.url + " " + this.contains + " " + this.email.toString() + " " + this.interval + " " + this.selector + " " + this.title;
   }
 
 }

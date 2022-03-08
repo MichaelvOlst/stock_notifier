@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="x-apple-disable-message-reformatting" />
-  <title>{{title}}</title>
+  <title>{{emailTitle}}</title>
   
   <style>
     body {
@@ -40,12 +40,9 @@
         <table class="emailHolder" cellpadding="30">
           <tr>
             <td style="text-align: left;">
-              <h1>Title: {{title}}</h1>
-              <p>Marktplaats url: <a href="{{url}}">{{url}}</a></p>
-              <p>Seller: {{seller}}</p>
-              <p>Price: {{price}}</p>
-              <p>Kilometers: {{kilometers}}</p>
-              <p>Year: {{year}}</p>
+              <h1>{{emailTitle}}</h1>
+              <p>The product {{taskTitle}} is in Stock again. Go to url below to order it.</p>
+              <a href="{{productUrl}}">{{taskUrl}}</a>
             </td>
           </tr>
         </table>
